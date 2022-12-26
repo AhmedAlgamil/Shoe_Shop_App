@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="shoesInput"
+            type="com.test.shoeapp.Shoes" />
+    </data>
+
+    <!--  used to contain buttons and scrollview  -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ShoeListFragment">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <!--  used to contain TextEditors to take the input from users  -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/text_edit_shoe_name"
+                    android:layout_width="350sp"
+                    android:text="@={shoesInput.name}"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margins"/>
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/text_edit_shoe_size"
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margins"
+                    android:text="@={shoesInput.size}"
+                    android:inputType="numberDecimal" />
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/text_edit_shoe_company"
+                    android:layout_width="350sp"
+                    android:text="@={shoesInput.companyName}"
+                    android:layout_margin="@dimen/margins"
+                    android:layout_height="wrap_content" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/text_edit_shoe_description"
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margins"
+                    android:text="@={shoesInput.descrption}"
+                    android:inputType="textMultiLine" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_save"
+            android:layout_width="120sp"
+            android:layout_height="50dp"
+            android:text="@string/Save"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.92"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.98" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

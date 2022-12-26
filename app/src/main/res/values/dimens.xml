@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margins">20sp</dimen>
+    <dimen name="text_instructuons">20sp</dimen>
+    <dimen name="text_welcome">15sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

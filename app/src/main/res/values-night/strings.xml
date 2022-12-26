@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="welcome">Welcome</string>
+    <string name="description">Run smooth with Victory V-Shock technology</string>
+    <string name="next">Next</string>
+    <string name="add">Add</string>
+    <string name="Save">Save</string>
+    <string name="shoe_name">Name</string>
+</resources>
